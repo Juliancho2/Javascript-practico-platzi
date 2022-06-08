@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,48 @@
     <link rel="stylesheet" href="style.css">
     <title>Curso de js platzi</title>
 </head>
+
 <body>
     <header>
-        <h1>Sitio web de Matematicas</h1>
+        <img src="./asset/img/blurry-gradient-haikei.svg" alt="Firgura geometricas">
+        <h1>Figuras geometricas</h1>
+        <small>¡Descubramos el area y perimetros de las figuras geometricas!</small>
     </header>
+    <!-- <hr> -->
     <main>
-
+        <h2>Digita tus medidas a la figura a calcular:</h2>
+        <section class="main-container-inputs">
+            <article class="container-figures cuadrado" >
+                <h3>Cuadrado</h3>
+                <span>Digita un lado del Cuadrado</span>
+                <input type="number">
+                <button>Calcular</button>
+            </article>
+            <article class="container-figures triangulo">
+                <h3>Triangulo</h3>
+                <span>Digita un lado del Triangulo</span>
+                <input type="number">
+                <span>Digita otro lado del Triangulo</span>
+                <input type="number">
+                <span>Digita un lado del Cuadrado</span>
+                <input type="number">
+                <span>Digita la altura</span>
+                <input type="number">
+                <button>Calcular</button>
+            </article>
+            <article class="container-figures circulo">
+                <h3>Circulo</h3>
+                <span>Digita el radio del circulo</span>
+                <input type="number">
+                <button>Calcular</button>
+            </article>
+           </section>
+           <section class="main-container-results">
+                
+        </section>
     </main>
-    <footer>
 
-    </footer>
-
-<script src="./main.js"></script>  
+    <script src="./main.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,106 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
 }
+
 header{
-    background: rebeccapurple;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:sans-serif ;
+}
+img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+header h1{
+    position: relative;
+    color:#ffffff;
+    /* background: white; */
+    font-size: 3rem;
+    z-index: 30;
+}
+header small{
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    /* background: white; */
+    color: #adacad;
+    z-index: 30;
+}
+hr{
+    display: block;
+    width: 100%;
+    border: 1px solid red;
+    
+}
+
+main{
+    font-family: sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background: rgb(228, 224, 233);
+    z-index: 30;
+    padding-top: 50px;
+}
+main h2{
     text-align: center;
-    min-height: 40px;
-    padding: 10px 0;
+    font-size: 1.5rem;
+    color: #590696;
+}
+.main-container-inputs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+    /* grid-template-rows: 200px 200px; */
+    justify-content: space-evenly;
+    /* background: #d7a9f8; */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 10px;
+}
+.container-figures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1E9E5;
+    min-height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.274);
+}
+.container-figures h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #590696;
+}
+.container-figures span{
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: bold;
+    color:rgb(44, 39, 39) ;
+}
+.container-figures input,.container-figures button{
+    width: 80%;
+    margin-top: 8px;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    min-height: 30px;
+}
+.container-figures button{
+    background: #9AE66E;
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    cursor: pointer;
 }
